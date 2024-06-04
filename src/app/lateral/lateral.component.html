@@ -1,0 +1,21 @@
+<div class="barra">
+  <div class="itens">
+    <p class="pzinho">Painel principal</p>
+    <p class="pzinho">Eniar arquivo</p>
+    <p class="pzinho">Documentacao</p>
+    <div class="opcao">
+      <div (mouseenter)="showElement = true" (mouseleave)="showElement = false">
+        <a>Relatorios <i class="material-icons">expand_more</i></a>
+        <div *ngIf="showElement" class="relatorinhos">
+          <a [routerLink]="['/analitico']" routerLinkActive="router-link-active" ><p>relatorio analitico</p></a>
+          <a [routerLink]="['/sintetico']" routerLinkActive="router-link-active"> <p>relatorio sintetico</p></a>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="perfil">
+    <p class="pzinho">Perfil</p>
+    <p class="pzinho">Sair</p>
+  </div>
+</div>
