@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
 import { RouterLink } from '@angular/router';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 export interface PeriodicElement {
   TipoDocumento: string;
@@ -11,7 +12,7 @@ export interface PeriodicElement {
 @Component({
   selector: 'app-analitico',
   standalone: true,
-  imports: [MatTableModule, RouterLink],
+  imports: [MatTableModule, RouterLink, MatPaginatorModule],
   templateUrl: './analitico.component.html',
   styleUrls: ['./analitico.component.css']
 })

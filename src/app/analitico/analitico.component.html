@@ -6,12 +6,15 @@
   <option value="">Tipo de documento</option>
   <option value="">RG</option>
   <option value="">CNH</option>
+  <option value="">Contrato social</option>
+  <option value="">NFS</option>
+  <option value="">Contracheque</option>
 </select>
 <input type="date" name="" id="">
 </div>
 
-<div class="tabela">
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+<div class="tabela" >
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="border: 1px solid rgb(207, 207, 207); width: 900px;">
 
     <ng-container matColumnDef="TipoDocumento">
       <th mat-header-cell *matHeaderCellDef> Tipo de documento</th>
@@ -31,6 +34,11 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
+  <mat-paginator [length]="100"
+              [pageSize]="10"
+              [pageSizeOptions]="[5, 10, 25, 100]"
+              aria-label="Select page" style="margin-bottom: 30px;">
+</mat-paginator>
 </div>
 <div class="botao-baixar">
   <button> Baixar relatorio</button>

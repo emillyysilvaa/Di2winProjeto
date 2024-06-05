@@ -1,5 +1,5 @@
 import { CommonModule } from '@angular/common';
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatIconModule } from '@angular/material/icon';
 import { RouterLink } from '@angular/router';
 
@@ -13,4 +13,8 @@ import { RouterLink } from '@angular/router';
 })
 export class LateralComponent {
   showElement = false;
+  @Input() isDarkTheme: boolean;
+  constructor() {
+    this.isDarkTheme = false; // Or any default boolean value
+  }
 }

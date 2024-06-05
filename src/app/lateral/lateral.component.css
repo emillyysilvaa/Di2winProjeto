@@ -3,7 +3,7 @@
   background-color: rgb(236, 233, 233);
   margin-top: -8px;
   width: 180px;
-  height: 80vh;
+  height: 100vh;
   padding-top: 30px;
   display: flex;
   flex-direction: column;
@@ -38,6 +38,25 @@ cursor: pointer;
   padding-left: 25px;
 }
 
+.icone{
+  display: flex;
+  gap: 5px;
+}
+
+.light-theme {
+  background-color: rgb(236, 233, 233);
+}
+
+.dark-theme {
+  background-color: rgb(94, 93, 93);
+  color: white;
+  .pzinho{
+    color: rgb(255, 255, 255);
+  }
+  a{
+    color: rgb(255, 255, 255);
+  }
+}
 
 
 

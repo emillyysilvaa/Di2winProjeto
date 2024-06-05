@@ -1,3 +1,20 @@
-div{
+.itens{
   display: flex;
 }
+
+.light-theme {
+  background-color: white;
+  color: black;
+}
+
+.dark-theme {
+  background-color: rgb(63, 53, 53);
+  color: white;
+}
+
+.botao{
+  position: absolute;
+  top: 30px;
+  right: 300px;
+}
+

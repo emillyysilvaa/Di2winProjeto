@@ -1,7 +1,9 @@
-<app-barra></app-barra>
-<div>
-  <app-lateral></app-lateral>
-<router-outlet />
+<div class="tema" [ngClass]="isDarkTheme ? 'dark-theme' : 'light-theme'">
+  <button class="botao" (click)="toggleTheme()">Modo Noturno</button>
+  <app-barra></app-barra>
+  <div class="itens">
+    <app-lateral [isDarkTheme]="isDarkTheme"></app-lateral>
+
+    <router-outlet />
+  </div>
 </div>
-
-
