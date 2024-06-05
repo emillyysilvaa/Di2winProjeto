@@ -1,5 +1,11 @@
 <div class="tema" [ngClass]="isDarkTheme ? 'dark-theme' : 'light-theme'">
-  <button class="botao" (click)="toggleTheme()">Modo Noturno</button>
+
+  <button class="botao" (click)="toggleTheme()">
+    <div class="toggle-container">
+      <input type="checkbox" id="toggle-switch">
+
+    </div>
+  </button>
   <app-barra></app-barra>
   <div class="itens">
     <app-lateral [isDarkTheme]="isDarkTheme"></app-lateral>

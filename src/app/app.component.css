@@ -8,7 +8,7 @@
 }
 
 .dark-theme {
-  background-color: rgb(63, 53, 53);
+  background-color: rgb(47, 47, 47);
   color: white;
 }
 
@@ -16,5 +16,47 @@
   position: absolute;
   top: 30px;
   right: 300px;
+  background-color: transparent;
+}
+
+.toggle-container{
+  display: flex;
+  align-items: center;
+}
+
+.toggle-container label {
+  margin-right: 10px;
+}
+
+input[type="checkbox"] {
+  appearance: none;
+  width: 40px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #ccc;
+  position: relative;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+input[type="checkbox"]:checked {
+  background-color: #2196F3;
+}
+
+input[type="checkbox"]:before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  background-color: #fff;
+  transition: transform 0.3s ease;
+}
+
+input[type="checkbox"]:checked:before {
+  transform: translate(50%, -50%);
 }
 

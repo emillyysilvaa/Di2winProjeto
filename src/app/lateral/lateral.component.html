@@ -1,16 +1,17 @@
 <div class="barra" [ngClass]="isDarkTheme ? 'dark-theme' : 'light-theme'">
+
   <div class="itens">
     <p class="pzinho">Painel principal</p>
     <p class="pzinho">Enviar arquivo</p>
-    <p class="pzinho">Documentacao</p>
+    <p class="pzinho">Documentação</p>
     <div class="opcao">
       <div (mouseenter)="showElement = true" (mouseleave)="showElement = false">
-        <a class="icone">Relatorios
-          <img src="https://w7.pngwing.com/pngs/240/696/png-transparent-v-shaped-gray-illustration-menu-arrow-icon-down-arrow-angle-web-design-rectangle.png" alt="imagem" width="30px">
+        <a class="icone">Relatórios
+          <img src="https://mail.google.com/mail/u/0?ui=2&amp;ik=fd79c8cca5&amp;attid=0.1&amp;permmsgid=msg-f:1801051093644088100&amp;th=18fe9e6d62fc1324&amp;view=fimg&amp;realattid=f_lx28b4fn0&amp;disp=thd&amp;attbid=ANGjdJ_HpUz0cMB6cFxa_tVnb8VAcoHtT00sMzB1cgEgRORTRvUj_7TLRVUpCIcKay9rgKnDWUNAYbFqz8ScU0WHJqqvt68WrWk7NuoRjKIpaEG8gYiwroFVw361ymA&amp;ats=2524608000000&amp;sz=w629-h633" alt="imagem" width="15px">
         </a>
         <div *ngIf="showElement" class="relatorinhos">
-          <a [routerLink]="['/analitico']" routerLinkActive="router-link-active" ><p>relatorio analitico</p></a>
-          <a [routerLink]="['/sintetico']" routerLinkActive="router-link-active"> <p>relatorio sintetico</p></a>
+          <a [routerLink]="['/analitico']" routerLinkActive="router-link-active" ><p>Relatórios analíticos</p></a>
+          <a [routerLink]="['/sintetico']" routerLinkActive="router-link-active"> <p>Relatórios sintéticos</p></a>
         </div>
       </div>
     </div>

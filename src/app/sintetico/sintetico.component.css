@@ -17,9 +17,9 @@ input[type="text"] {
 }
 .lupa{
   display: inline-block;
-  width: 25px;
-  height: 25px;
-  background-image: url('https://www.google.com/url?sa=i&url=https%3A%2F%2Ficones.pro%2Fpt%2Ficone-de-lupa-simbolo-png-cinza%2F&psig=AOvVaw2ebMpBjSLGwA7mw2Tkybn3&ust=1717687059897000&source=images&cd=vfe&opi=89978449&ved=0CBIQjRxqFwoTCICN_YrhxIYDFQAAAAAdAAAAABAE'); /* Caminho para a imagem da lupa */
+  width: 15px;
+  height: 15px;
+  background-image: url("https://icones.pro/wp-content/uploads/2021/06/icone-loupe-gris.png");
   background-size: cover;
   cursor: pointer;
 }

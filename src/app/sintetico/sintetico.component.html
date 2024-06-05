@@ -1,5 +1,5 @@
 <div class="tudo">
-  <h1>Relatorio sintetico</h1>
+  <h1>Relatórios Sintéticos</h1>
   <hr>
 
   <div class="pesquisa">
@@ -10,10 +10,10 @@
   <input type="date" name="" id="">
 </div>
     <div class="tabela">
-      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="border: 1px solid rgb(207, 207, 207); width: 900px;">
 
         <ng-container matColumnDef="Usuario">
-          <th mat-header-cell *matHeaderCellDef> Usuario</th>
+          <th mat-header-cell *matHeaderCellDef> Usuário</th>
           <td mat-cell *matCellDef="let element"> {{element.Usuario}} </td>
         </ng-container>
 
@@ -23,15 +23,20 @@
         </ng-container>
 
         <ng-container matColumnDef="qtdPaginas">
-          <th mat-header-cell *matHeaderCellDef> Quantidade de paginas processadas </th>
+          <th mat-header-cell *matHeaderCellDef> Quantidade de páginas processadas </th>
           <td mat-cell *matCellDef="let element"> {{element.qtdPaginas}} </td>
         </ng-container>
 
         <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
       </table>
+<mat-paginator [length]="100"
+      [pageSize]="10"
+      [pageSizeOptions]="[5, 10, 25, 100]"
+      aria-label="Select page" style="margin-bottom: 30px; font-size: 12px;">
+</mat-paginator>
     </div>
     <div class="botao-baixar">
-      <button> Baixar relatorio</button>
+      <button> Baixar relatório</button>
     </div>
     </div>

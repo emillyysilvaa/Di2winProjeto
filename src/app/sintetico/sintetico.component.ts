@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
 import { RouterLink } from '@angular/router';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 export interface PeriodicElement {
   Usuario: string;
@@ -11,7 +12,7 @@ export interface PeriodicElement {
 @Component({
   selector: 'app-sintetico',
   standalone: true,
-  imports: [MatTableModule, RouterLink],
+  imports: [MatTableModule, RouterLink, MatPaginatorModule],
   templateUrl: './sintetico.component.html',
   styleUrls: ['./sintetico.component.css']
 })
@@ -21,11 +22,11 @@ export class SinteticoComponent {
   dataSource = ELEMENT_DATA;
 }
 const ELEMENT_DATA: PeriodicElement[] = [
-  {Usuario: 'Usuario 1', data: '02/05/2024', qtdPaginas: 3},
-  {Usuario: 'Usuario 2', data: '15/06/2024', qtdPaginas: 1},
-  {Usuario: 'Usuario 3', data: '21/06/2024', qtdPaginas: 6},
-  {Usuario: 'Usuario 4', data: '18/05/2024', qtdPaginas: 9},
-  {Usuario: 'Usuario 5', data: '10/04/2024', qtdPaginas: 9},
-  {Usuario: 'Usuario 6', data: '09/03/2024', qtdPaginas: 1},
+  {Usuario: 'Usuário 1', data: '02/05/2024', qtdPaginas: 3},
+  {Usuario: 'Usuário 2', data: '15/06/2024', qtdPaginas: 1},
+  {Usuario: 'Usuário 3', data: '21/06/2024', qtdPaginas: 6},
+  {Usuario: 'Usuário 4', data: '18/05/2024', qtdPaginas: 9},
+  {Usuario: 'Usuário 5', data: '10/04/2024', qtdPaginas: 9},
+  {Usuario: 'Usuário 6', data: '09/03/2024', qtdPaginas: 1},
 ];
 
