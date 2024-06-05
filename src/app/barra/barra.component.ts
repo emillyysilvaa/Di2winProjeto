@@ -8,5 +8,4 @@ import { Component } from '@angular/core';
   styleUrl: './barra.component.css'
 })
 export class BarraComponent {
-
 }
