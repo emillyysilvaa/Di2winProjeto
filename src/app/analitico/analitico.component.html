@@ -3,9 +3,9 @@
 <hr>
 <div class="botoes">
   <select name="" id="">
-  <option value="">tipo de documento</option>
-  <option value="">rg</option>
-  <option value="">cnh</option>
+  <option value="">Tipo de documento</option>
+  <option value="">RG</option>
+  <option value="">CNH</option>
 </select>
 <input type="date" name="" id="">
 </div>
@@ -13,9 +13,9 @@
 <div class="tabela">
   <table mat-table [dataSource]="dataSource" class="mat-elevation-z8">
 
-    <ng-container matColumnDef="tipoDocumento">
+    <ng-container matColumnDef="TipoDocumento">
       <th mat-header-cell *matHeaderCellDef> Tipo de documento</th>
-      <td mat-cell *matCellDef="let element"> {{element.tipoDocumento}} </td>
+      <td mat-cell *matCellDef="let element"> {{element.TipoDocumento}} </td>
     </ng-container>
 
     <ng-container matColumnDef="data">

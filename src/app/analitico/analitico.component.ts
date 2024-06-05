@@ -3,7 +3,7 @@ import { MatTableModule } from '@angular/material/table';
 import { RouterLink } from '@angular/router';
 
 export interface PeriodicElement {
-  tipoDocumento: string;
+  TipoDocumento: string;
   data: string;
   qtdPaginas: number;
 }
@@ -17,15 +17,17 @@ export interface PeriodicElement {
 })
 
 export class AnaliticoComponent {
-  displayedColumns: string[] = ['tipoDocumento', 'data', 'qtdPaginas'];
+  displayedColumns: string[] = ['TipoDocumento', 'data', 'qtdPaginas'];
   dataSource = ELEMENT_DATA;
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [
-  {tipoDocumento: 'CNH', data: '01/05/2024', qtdPaginas: 1},
-  {tipoDocumento: 'RG', data: '15/06/2024', qtdPaginas: 4},
-  {tipoDocumento: 'Registro', data: '21/06/2024', qtdPaginas: 6},
-  {tipoDocumento: 'RG', data: '18/05/2024', qtdPaginas: 9},
+  {TipoDocumento: 'Contrato Social', data: '02/05/2024', qtdPaginas: 3},
+  {TipoDocumento: 'CNH', data: '15/06/2024', qtdPaginas: 1},
+  {TipoDocumento: 'NFS', data: '21/06/2024', qtdPaginas: 6},
+  {TipoDocumento: 'Contracheque', data: '18/05/2024', qtdPaginas: 9},
+  {TipoDocumento: 'Contracheque', data: '10/04/2024', qtdPaginas: 9},
+  {TipoDocumento: 'RG', data: '09/03/2024', qtdPaginas: 1},
 ];
 
 

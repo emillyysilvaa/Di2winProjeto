@@ -1,0 +1,55 @@
+.tudo{
+  margin: 50px 0px 0px 100px;
+  width: 900px;
+  gap: 10px;
+  }
+
+  .pesquisa{
+    display: flex;
+  }
+input[type="text"] {
+  display: flex;
+  flex: 10;
+  padding: 5px;
+  width: 200px;
+  height: 20px;
+  border: 1px solid #ccc;
+}
+.calendario{
+  display: flex;
+  gap: 20px;
+}
+  input{
+    width: 150px;
+    height: 30px;
+    border-radius: 5px;
+    background-color: rgb(255, 211, 228);
+  }
+  select{
+    width: 150px;
+    height: 33px;
+    border-radius: 5px;
+    background-color: rgb(255, 211, 228);
+  }
+
+  button{
+    width: 150px;
+    height: 33px;
+    border-radius: 5px;
+    background-color: rgb(255, 211, 228);
+  }
+
+  .botao-baixar{
+    display: flex;
+    justify-content: end;
+  }
+
+  .tabela{
+    width: 80%;
+    margin-top: 30px;
+  }
+
+  hr {
+    border-color: rgb(255, 10, 104);
+  }
+
