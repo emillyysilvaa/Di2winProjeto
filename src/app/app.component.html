@@ -1,11 +1,10 @@
 <div class="tema" [ngClass]="isDarkTheme ? 'dark-theme' : 'light-theme'">
 
-  <button class="botao" (click)="toggleTheme()">
-    <div class="toggle-container">
-      <input type="checkbox" id="toggle-switch">
-
-    </div>
-  </button>
+  <div class="botao">
+    <input type="checkbox" id="toggle-switch"
+    (click)="toggleTheme()">
+  </div>
+  
   <app-barra></app-barra>
   <div class="itens">
     <app-lateral [isDarkTheme]="isDarkTheme"></app-lateral>

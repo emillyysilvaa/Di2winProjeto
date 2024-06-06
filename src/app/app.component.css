@@ -15,19 +15,13 @@
 .botao{
   position: absolute;
   top: 30px;
-  right: 300px;
+  right: 350px;
   background-color: transparent;
 }
-
-.toggle-container{
-  display: flex;
-  align-items: center;
+.botao input{
+  height: 20px;
+  background-color: pink;
 }
-
-.toggle-container label {
-  margin-right: 10px;
-}
-
 input[type="checkbox"] {
   appearance: none;
   width: 40px;
