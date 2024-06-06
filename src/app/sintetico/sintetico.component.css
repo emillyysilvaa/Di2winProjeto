@@ -35,8 +35,7 @@
   background-color: (255, 211, 228);
   text-align: center;
   margin-left: 20px;
-  background-color: transparent;
-  border: 1px solid cor #a8a8a8;
+  background-color: #f3f3f3
 }
 
 .calendario {
@@ -49,8 +48,8 @@
   width: 250px;
   height: 40px;
   border-radius: 5px;
-  background-color: transparent;
-  border: 1px solid cor #a8a8a8;
+  background-color: #f3f3f3
+  
 }
 select {
   width: 150px;

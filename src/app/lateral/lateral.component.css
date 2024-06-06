@@ -52,7 +52,7 @@ cursor: pointer;
 }
 
 .dark-theme {
-  background-color: rgb(94, 93, 93);
+  background-color: gray;
   color: white;
   .pzinho{
     color: rgb(255, 255, 255);
