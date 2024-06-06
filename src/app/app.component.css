@@ -15,33 +15,28 @@
 .botao{
   position: absolute;
   top: 30px;
-  right: 350px;
-  background-color: transparent;
+  right: 280px;
+  width: 100px;
 }
-.botao input{
-  height: 20px;
-  background-color: pink;
+.botao .botao-check:checked {
+  background-color: #ce007f; /* Azul escuro */
 }
 input[type="checkbox"] {
   appearance: none;
   width: 40px;
   height: 20px;
-  border-radius: 50%;
-  background-color: #ccc;
+  background-color: #faa7a7;
+  border-radius: 8px;
   position: relative;
   cursor: pointer;
   transition: background-color 0.3s ease;
-}
-
-input[type="checkbox"]:checked {
-  background-color: #2196F3;
 }
 
 input[type="checkbox"]:before {
   content: "";
   position: absolute;
   top: 50%;
-  left: 50%;
+  left: 30%;
   transform: translate(-50%, -50%);
   width: 16px;
   height: 16px;

@@ -1,7 +1,8 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 import { MatTableModule } from '@angular/material/table';
 import { RouterLink } from '@angular/router';
 import {MatPaginatorModule} from '@angular/material/paginator';
+import { CommonModule } from '@angular/common';
 
 export interface PeriodicElement {
   TipoDocumento: string;
@@ -12,7 +13,7 @@ export interface PeriodicElement {
 @Component({
   selector: 'app-analitico',
   standalone: true,
-  imports: [MatTableModule, RouterLink, MatPaginatorModule],
+  imports: [MatTableModule, RouterLink, MatPaginatorModule, CommonModule],
   templateUrl: './analitico.component.html',
   styleUrls: ['./analitico.component.css']
 })
@@ -20,6 +21,11 @@ export interface PeriodicElement {
 export class AnaliticoComponent {
   displayedColumns: string[] = ['TipoDocumento', 'data', 'qtdPaginas'];
   dataSource = ELEMENT_DATA;
+
+  @Input() isDarkTheme: boolean;
+  constructor() {
+    this.isDarkTheme = false;
+  }
 }
 
 const ELEMENT_DATA: PeriodicElement[] = [

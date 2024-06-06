@@ -1,14 +1,12 @@
 <div class="tema" [ngClass]="isDarkTheme ? 'dark-theme' : 'light-theme'">
-
   <div class="botao">
-    <input type="checkbox" id="toggle-switch"
-    (click)="toggleTheme()">
+    <input class="botao-check" type="checkbox" id="toggle-switch" (click)="toggleTheme()">
   </div>
-  
-  <app-barra></app-barra>
-  <div class="itens">
-    <app-lateral [isDarkTheme]="isDarkTheme"></app-lateral>
 
-    <router-outlet />
+  <app-barra></app-barra>
+  <div class="itens" [ngClass]="isDarkTheme ? 'dark-theme' : 'light-theme'">
+    <app-lateral [isDarkTheme]="isDarkTheme"></app-lateral>
+    <app-analitico  *ngIf="currentRoute === '/analitico'" [isDarkTheme]="isDarkTheme"></app-analitico>
+    <app-sintetico *ngIf="currentRoute === '/sintetico'" [isDarkTheme]="isDarkTheme"></app-sintetico>
   </div>
 </div>

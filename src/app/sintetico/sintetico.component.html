@@ -1,4 +1,4 @@
-<div class="tudo">
+<div class="tudo" >
   <h1>Relatórios Sintéticos</h1>
   <p id="paginasProcessadas"> Páginas Processadas: 12441</p>
   <hr>
@@ -9,9 +9,9 @@
   <span class="lupa"></span>
   <input class="data" type="date" name="id">
 
-</div>
-    <div class="tabela">
-      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="box-shadow: 0px 8px 10px 0px rgba(120, 120, 120, 0.2); width: 900px;">
+  </div>
+    <div  [ngClass]="isDarkTheme ? 'dark-theme' : 'light-theme'" class="tabela" style="box-shadow: 0px 8px 10px 0px rgba(120, 120, 120, 0.2);  width: 900px;">
+      <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 custom-table" style=" width: 900px;">
          <ng-container matColumnDef="Usuario">
           <th class="tudo" mat-header-cell *matHeaderCellDef mat-sort-header> Usuário</th>
           <td mat-cell *matCellDef="let element"> {{element.Usuario}} </td>
@@ -31,11 +31,12 @@
         <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
 
       </table>
-<mat-paginator [length]="100"
+      <mat-paginator class="custom-paginator" [length]="100"
       [pageSize]="10"
       [pageSizeOptions]="[5, 10, 25, 100]"
       aria-label="Select page" style="margin-bottom: 30px; font-size: 12px;">
-</mat-paginator>
+    </mat-paginator>
+
     </div>
     <div class="botao-baixar">
       <button> Baixar relatório</button>

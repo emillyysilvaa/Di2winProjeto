@@ -15,8 +15,8 @@
 <input type="date" name="" id="">
 </div>
 
-<div class="tabela" >
-  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8" style="box-shadow: 0px 8px 10px 0px rgba(120, 120, 120, 0.2); width: 900px;">
+<div  [ngClass]="isDarkTheme ? 'dark-theme' : 'light-theme'" class="tabela" style="box-shadow: 0px 8px 10px 0px rgba(120, 120, 120, 0.2);  width: 900px;">
+  <table mat-table [dataSource]="dataSource" class="mat-elevation-z8 custom-table" style="width: 900px;">
 
     <ng-container matColumnDef="TipoDocumento">
       <th class="tudo" mat-header-cell *matHeaderCellDef> Tipo de documento</th>
