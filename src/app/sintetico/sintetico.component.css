@@ -26,6 +26,7 @@
   cursor: pointer;
 }
 .data {
+  font-family: "Sora", sans-serif;
   width: 180px;
   height: 40px;
   border-radius: 5px;
@@ -41,6 +42,7 @@
 }
 
 .busca {
+  font-family: "Sora", sans-serif;
   width: 180px;
   height: 40px;
   border-radius: 5px;
@@ -54,6 +56,7 @@ select {
 }
 
 button {
+  font-family: "Sora", sans-serif;
   width: 150px;
   height: 43px;
   border-radius: 5px;
