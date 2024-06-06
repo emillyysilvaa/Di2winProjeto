@@ -19,13 +19,13 @@
   width: 100px;
 }
 .botao .botao-check:checked {
-  background-color: #ce007f; /* Azul escuro */
+  background-color: #575757
 }
 input[type="checkbox"] {
   appearance: none;
   width: 40px;
   height: 20px;
-  background-color: #faa7a7;
+  background-color: #F21C8A;
   border-radius: 8px;
   position: relative;
   cursor: pointer;

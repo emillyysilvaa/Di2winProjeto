@@ -36,14 +36,15 @@
     <tr mat-header-row *matHeaderRowDef="displayedColumns"></tr>
     <tr mat-row *matRowDef="let row; columns: displayedColumns;"></tr>
   </table>
-  <mat-paginator [length]="100"
-              [pageSize]="10"
-              [pageSizeOptions]="[5, 10, 25, 100]"
-              aria-label="Select page" style="margin-bottom: 30px; font-size: 12px;">
+  <mat-paginator class="custom-paginator" [length]="100"
+  [pageSize]="10"
+  [pageSize]="5"
+  aria-label="Select page" style="margin-bottom: 30px; font-size: 12px;">
 </mat-paginator>
+
 </div>
-<div class="botao-baixar">
-  <button> Baixar relatório</button>
-</div>
+<button id="baixarRelatorio">Baixar Relatório
+  <img class ="download" src="https://mail-attachment.googleusercontent.com/attachment/u/0/?ui=2&ik=fd79c8cca5&attid=0.1&permmsgid=msg-a:r-4321712512151678874&th=18fee7bcbdcdf49e&view=att&disp=inline&realattid=f_lx3i2xuq0&saddbat=ANGjdJ-j0KZwv3PIBj82UYoEt-1OCstyzwzmFJHYUOQX5yhsV0xD43ex9b0Z3XU4rjHDo--EtpK_82VqsJKbQEBFR0dCBAgv-kuxynkQKgYVjr3hXih6VF_YwVQv3JS2XWkGnxCV_gFks5HPrpKFdMwKdlJDVNuRIjrlqSJEcQ0WHMutlCImA2bL6rPeAqVC19YDF7r541TsXcpqd9p1EvmW6hx38GmhfgkvhZkqKAb97HThVVhSmXGwez-kFxV6UJ5dh2CIWIcQ_NUqpnAwRMrHczSLeRj-QtoSIleoNOsDM6pqkEq0QtVHv7GPuF-LK-SMmjvSx3K0BB7yWqShvAcPnV7Ok4bqbuOfatA3DR5MAXcYfz2SJqW2qGY3C381Kn4QWnLre-oF-a6xWOo6IuY7Iec9nl9KoRkbM5TKjGsqEKGnl3ew92NkcClGqocU6GrGfqp8w5u6YlDjSi7XOzt7iDYu4RTPe9dVd1RVTsfUor6OBk2ES5B__J_VrEHugzS3GKu0_y1vkstAvM3xljizDSWjSl6R8m0GM6u2E1heCPNI4be_TnX-HmlSZjdh8crUjtFtjf8XKNnW1RcF9V05A58JzfAJlC8OEEPk8LHU_sI0iSGN3PYCzVSHlEKSCGXI30Leo9uwZU_O1Zkr5df9dop1AjOUvhkQ1F3ZOVt0FwuM6HNUKNu9KnNPDXR978qaCROP94EDAW4R6Q6F4e8MtDH7-1YjL77g6YRHtP7-XZgFMlIJampvNwho7EECq2pQjsgAvcbGWwwvriaTdEuR4YS93Q-8ZJBsWjp6OONyg-0Lld57OvIVXiL6HVSVlOtwuPMp_FMiRbV3I0ACLtlFRJzrc9t4bue4B1LMO4pht4Dnt-59D4hbDdmeFQ7C_K4Q0e3fZt3nKgCYZLS6rEAGLeAbVV3SOhsn9SrwMYza5Y9K47Frp3u_aKwPUfnw7EfbO4-p-vT88ysFLbf_fxV7uJiCmz8UK7QfAMfr6utZ2G_Js4Dj5qOWI0jzm1-Ab4sOTM8Y5fmIB57anMyi" width="16" height="16">
+</button>
 </div>
 
